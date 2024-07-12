@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "start": "node src/server/index.js",
+    "build-prod": "webpack --config webpack.prod.js",
+    "build-dev": "webpack --config webpack.dev.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "node-sass": "^9.0.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "workbox-webpack-plugin": "^7.1.0"
+  }
+}

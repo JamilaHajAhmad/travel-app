@@ -1,0 +1,112 @@
+.about-content,
+.services-content,
+.our-mission-content {
+    padding: 60px 170px;
+}
+
+
+.about-content h2,
+.services-content h2,
+.our-mission-content h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    position: relative;
+    width: fit-content;
+}
+
+
+@media (width: 1024px) {
+    .about-content {
+        margin-top: -400px;
+    }
+}
+
+
+@media (width: 1440px) {
+    .about-content {
+        margin-top: -300px;
+    }
+}
+
+
+.about-content h2::after,
+.services-content h2::after,
+.our-mission-content h2::after {
+    position: absolute;
+    content: "";
+    width: 180%;
+    height: 2px;
+    background-color: #d8ae7e;
+    bottom: -7px;
+    left: 0;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+
+
+.about-content h2:hover::after,
+.services-content h2:hover::after,
+.our-mission-content h2:hover::after {
+    width: 280%;
+} 
+
+
+.about-content p,
+.services-content p,
+.our-mission-content p {
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+}
+
+
+.about-content p span,
+.services-content p span,
+.our-mission-content p span {
+    color: #d8ae7e;
+    font-weight: 700;
+}
+
+
+.services-content p span {
+    color: #0c1844;
+}
+
+
+@media (max-width: 425px) {
+    .about-content,
+    .services-content,
+    .our-mission-content {
+        padding: 70px 50px;
+    }
+
+
+    .about-content {
+        margin-top: -320px;
+    }
+
+
+    .about-content h2::after,
+    .services-content h2::after,
+    .our-mission-content h2::after {
+        width: 150%;
+    }
+
+
+    .about-content h2:hover::after,
+    .services-content h2:hover::after,
+    .our-mission-content h2:hover::after {
+        width: 180%;
+    } 
+}
+
+
+@media (width: 768px) {
+    .about-content {
+        margin-top: -250px;
+    }
+}

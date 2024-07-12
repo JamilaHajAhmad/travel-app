@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetSetJourney</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#"><img src="./logo.png" alt="JetSetJourney"></a>
+        <div>
+            <ul class="links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#get-started">Get Started</a></li>
+                <li><a href="#sign-up">Sign Up</a></li>
+                <a href="#"><i class="fa-solid fa-xmark close"></i></a>
+            </ul>
+        </div>
+        <div class="small-screens">
+            <i class="fa-solid fa-bars toggle-menu"></i>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Unforgettable Journey</h1>
+            <p>Book your flight today and experience <br> the best of JetSetJourney</p>
+            <button onclick="
+                document.querySelector('.get-started').scrollIntoView({
+                    behavior:'smooth'
+                });
+            ">Get Started</button>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to <span>JetSetJourney</span>, where your travel dreams come to life.
+            Founded by passionate travelers, our app is designed to simplify and enhance your
+            travel experience. With an intuitive interface and a wealth of features,
+            <span>JetSetJourney</span> offers personalized recommendations, seamless booking options,
+            and real-time updates to make every journey smooth and enjoyable.<br>
+            <marquee bgcolor="#d8ae7e" loop="-1" width="100%" scrollamount="5">Whether you're planning
+            a weekend getaway or a global adventure, we're here to help you discover new destinations,
+            create unforgettable memories, and explore the world with confidence.</marquee></p>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="banner-content">
+            <p><i class="fa-solid fa-quote-left"></i>Traveling leaves you speechless, then turns you into a storyteller.
+            <i class="fa-solid fa-quote-right"></i></p>
+            <h3>Alex Harper</h3>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="services-content">
+            <h2>Our Services</h2>
+            <p>At <span>JetSetJourney</span>, we offer a comprehensive suite of services designed to make your travel
+            planning effortless and enjoyable. From finding the best flights and hotels to curating personalized
+            travel itineraries, our app has everything you need to create the perfect trip. Enjoy exclusive deals,
+            real-time travel alerts, and seamless booking capabilities all in one place.<br>
+            <marquee bgcolor="#d8ae7e" width="100%" loop="-1" scrollamount="5">Whether you need destination
+            guides, activity recommendations, or a detailed budget tracker, <span>JetSetJourney</span> ensures that every
+            aspect of your travel experience is covered. Let us take care of the details, so you can focus on making
+            memories.</marquee></p>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>Hear from Our Happy Travelers</h2>
+        <div class="testimonials-content">
+            <div class="box">
+                <img src="./avatar1.png" alt="">
+                <div class="details">
+                    <p>"Absolutely love this app! It made planning my trip to Europe so easy and stress-free.
+                    The personalized recommendations were spot-on, and I discovered some hidden gems I wouldn't
+                    have found otherwise."</p>
+                    <h3>Sarah L.</h3>
+                </div>
+                <div class="review">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+                <div class="box">
+                    <img src="./avatar2.png" alt="">
+                    <div class="details">
+                        <p>"The best travel app I've ever used. The seamless booking process and real-time
+                        updates were invaluable during my trip to Asia.<br> Highly recommend it to anyone who loves
+                        to travel!"</p>
+                        <h3>David R.</h3>
+                    </div>
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                </div>
+                    <div class="box">
+                        <img src="./avatar3.png" alt="">
+                        <div class="details">
+                            <p>"I was blown away by the level of detail and thoughtfulness that went into the
+                            itineraries. <span>JetSetJourney</span> helped me make the most of my vacation time
+                            and experience my destination like a local."</p>
+                            <h3>Emma W.</h3>
+                        </div>
+                        <div class="review">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                        <div class="box">
+                            <img src="./avatar4.png" alt="">
+                            <div class="details">
+                                <p>"From flights to accommodations and activities, this app covers everything.
+                                The user interface is super intuitive, and the customer support is top-notch.
+                                I can't imagine traveling without it."</p>
+                                <h3>James K.</h3>
+                            </div>
+                            <div class="review">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+        </div>
+    </section>
+
+    <section class="get-started" id="get-started">
+        <h2>Let's Get Started on Your Trip</h2>
+        <div class="get-started-content">
+            <form class="get-started-form">
+                <img src="./form.jpg" alt="">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+        
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" required>
+        
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date" required>
+        
+                <label for="travelers">Number of Travelers:</label>
+                <input type="number" id="travelers" name="travelers">
+        
+                <label for="accommodation">Accommodation Preferences:</label>
+                <select id="accommodation" name="accommodation">
+                    <option value="Hotel">Hotel</option>
+                    <option value="Hostel">Hostel</option>
+                    <option value="Airbnb">Airbnb</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="transportation">Transportation Preferences:</label>
+                <select id="transportation" name="transportation">
+                    <option value="Car-rental">Car Rental</option>
+                    <option value="Public-transport">Public Transport</option>
+                    <option value="Flight">Flight</option>
+                    <option value="Other">Other</option>
+                </select>
+        
+                <label for="activities">Activities/Interests:</label>
+                <input type="text" id="activities" name="activities">
+        
+                <label for="budget">Estimated Budget:</label>
+                <input type="number" id="budget" name="budget">
+        
+                <label for="special-requirements">Special Requirements:</label>
+                <textarea id="special-requirements" name="special-requirements"></textarea>
+        
+                <label for="contact-info">Contact Information:</label>
+                <input type="text" id="contact-info" name="contact-info">
+        
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes"></textarea>
+        
+                <button type="submit" id="submit">Add Trip</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="my-trips">
+        <h2>Upcoming Adventures</h2>
+        <section class="my-trips-content">
+            <!-- Trip cards will be dynamically generated here -->
+        </section>
+    </section>
+
+    <section class="country-info">
+        <img src="./travel.gif" class="gif1">
+        <img src="./travel2.gif" class="gif2">
+        <div class="country-info-content">
+            <h2 class="mainHeading">Your Guide to <span></span></h2>
+            <!-- Country information will be dynamically generated here -->
+        </div>
+    </section>
+
+    <section class="statistics">
+        <div class="statistics-content">
+            <div class="box">
+                <i class="fas fa-users"></i>
+                <h3 id="stat-users">0</h3>
+                <p>Active Users</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe"></i>
+                <h3 id="stat-countries">0</h3>
+                <p>Countries Served</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3 id="stat-trips">0</h3>
+                <p>Trips Booked</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-star"></i>
+                <h3 id="stat-reviews">0</h3>
+                <p>Positive Reviews</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-mission">
+    <div class="our-mission-content">
+        <h2>Our Mission</h2>
+        <p>At the heart of our journey is a commitment to crafting unforgettable travel experiences. We
+        believe in the power of exploration to broaden horizons, connect cultures, and inspire a deeper understanding
+        of the world around us. Every trip we design is a step towards a more connected and enriched global community.
+        At <span>JetSetJourney</span>, we strive to create a platform that helps people plan their perfect trip,
+        from choosing the perfect accommodation to finding the perfect activities.<br>
+        <marquee bgcolor="#d8ae7e" scrollamount="5" loop="-1" width="100%">Our mission is to make traveling
+        as simple and enjoyable as possible, and we're excited to be a part of this community.</marquee></p>
+    </div>
+    </section>
+
+    <section class="sign-up" id="sign-up">
+        <div class="sign-up-content">
+            <h2>Sign Up for Our Newsletter</h2>
+            <form>
+                <input type="email" id="signup-email" placeholder="Enter your email address" required>
+                <button type="submit" id="signup-button">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo-and-copyRights">
+                <img src="./logo.png" alt="JetSetJourney Logo">
+                <p>©-2024 <span>JetSetJourney</span> | All rights reserved.</p>
+            </div>
+
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Travel St, Wanderlust City, 45678</p>
+                <p><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@travelcompany.com</p>
+            </div>
+
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f blue"></i></a>
+                <a href="#"><i class="fab fa-x-twitter black"></i></a>
+                <a href="#"><i class="fab fa-instagram gradient"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in blue2"></i></a>
+            </div>
+
+            <div class="go-up">
+                <i onclick="document.querySelector('.header').scrollIntoView({
+                    behavior:'smooth'
+                })" class="fa-solid fa-arrow-up"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+    <script>
+        const desiredMedia = window.matchMedia("(max-width: 768px)");
+    if(desiredMedia.matches) {
+        const bar = document.querySelector('.toggle-menu');
+        const nav = document.querySelector('.links');
+        const xMark = document.querySelector('.close');
+        if(bar) {
+            bar.addEventListener('click', () => {
+                nav.classList.add('active');
+            });
+        }
+        if(xMark) {
+            xMark.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+.get-started {
+    padding: 70px 120px;
+    position: relative;
+}
+
+
+.get-started-content {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%,10%);
+    -webkit-transform: translate(-50%,10%);
+    -moz-transform: translate(-50%,10%);
+    -ms-transform: translate(-50%,10%);
+    -o-transform: translate(-50%,10%);
+    border: 1px solid #102c57;
+    padding: 40px;
+}
+
+
+.get-started h2 {
+    text-align: center;
+}
+
+
+.get-started-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.get-started-content form input,
+.get-started-content form select {
+    display: block;
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: 1px solid #ecca9c;
+    outline: none;
+    font-family: "Playfair Display", serif;
+}
+
+
+.get-started-content form select,
+.get-started-content form input[type="date"],
+.get-started-content form input[type="number"] {
+    width: fit-content;
+}
+
+
+.get-started-content textarea {
+    display: block;
+    width: 400px;
+    height: 150px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: 1px solid #ecca9c;
+    outline: none;
+    font-family: "Playfair Display", serif;
+}
+
+
+.get-started-content button {
+    width: fit-content;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background-color: white;
+    border: 1px solid #26355d;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    display: block;
+    margin-top: 10px;
+    margin: 10px auto;
+}
+
+
+.get-started-content button:hover {
+    background-color: #26355d;
+    color: white;
+}
+
+
+.get-started-content form label {
+    font-family: "Playwrite DE Grund", cursive;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.get-started-content form img {
+    width: 80%;
+}
+
+
+@media (max-width: 425px) {
+    .get-started {
+        padding: 50px;
+    }
+
+
+    .get-started-content {
+        padding: 30px 50px;
+        border: none;
+    }
+
+
+    .get-started-content form img {
+        width: 70%;
+    }
+
+
+    .get-started-content textarea {
+        width: 300px;
+    }
+
+}

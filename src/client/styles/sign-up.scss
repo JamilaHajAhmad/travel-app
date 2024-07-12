@@ -1,0 +1,104 @@
+.sign-up {
+    position: relative;
+    padding: 60px;
+    background-image: url('../images/signup-banner.jpg');
+    background-size: cover;
+    min-height: 40vh;
+    background-position: center center;
+}
+
+
+.sign-up::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+.sign-up .sign-up-content h2 {
+    position: relative;
+    margin-bottom: 30px;
+    color: white;
+    z-index: 10;
+}
+
+
+.sign-up .sign-up-content form  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.sign-up .sign-up-content form input {
+    flex-basis: 40%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background-color: white;
+    border: 1px solid #0c1844;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0c1844;
+    font-family: "Playfair Display", serif;
+    z-index: 10;
+}
+
+
+.sign-up .sign-up-content form button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background-color: #0c1844;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #0c1844;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    outline: none;
+    z-index: 10;
+    font-family: "Playfair Display", serif;
+}
+
+
+.sign-up .sign-up-content form button:hover {
+    background-color: white;
+    color: #0c1844;
+}
+
+
+@media (max-width: 425px) {
+    .sign-up {
+        padding: 30px 25px;
+    }
+
+
+    .sign-up .sign-up-content form input {
+        flex-basis: 10%;
+    }
+
+
+    .sign-up .sign-up-content form button {
+        margin-left: 5px;
+        padding: 5px 10px;
+        white-space: nowrap;
+    }
+}

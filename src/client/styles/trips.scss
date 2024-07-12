@@ -1,0 +1,759 @@
+.my-trips {
+    padding: 70px 120px;
+    position: relative;
+    margin-top: 1800px;
+    background-color: #ecceae;
+    display: none;
+}
+
+
+.my-trips h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+
+.my-trips .my-trips-content .trip {
+    border: 1px solid #405d72;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 40px 200px 200px 40px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    background-color: #fff8f3;
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+    margin-bottom: 20px;
+}
+
+
+.my-trips-content .trip .trip-front,
+.my-trips-content .trip .trip-back {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+
+.my-trips .my-trips-content .trip h3 {
+    font-size: 27px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+.my-trips .my-trips-content .trip .firstHeading {
+    margin-left: 100px;
+}
+
+
+.my-trips .my-trips-content .trip .front-side-details,
+.my-trips .my-trips-content .trip .back-side-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+
+.my-trips .my-trips-content .trip .front-side-details p,
+.my-trips .my-trips-content .trip .back-side-details p {
+    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+
+.my-trips .my-trips-content .trip .front-side-details p span,
+.my-trips .my-trips-content .trip .back-side-details p span,
+.trip .trip-back .back-side-details p p {
+    font-weight: 700;
+    color: #141e46;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+
+.trip .trip-front .weather-info {
+    text-align: center;
+    position: absolute;
+    top: 240%;
+    left: 105%;
+    transform: translate(-105%,-240%);
+    -webkit-transform: translate(-105%,-240%);
+    -moz-transform: translate(-105%,-240%);
+    -ms-transform: translate(-105%,-240%);
+    -o-transform: translate(-105%,-240%);
+    background-color: #f6e6cb;
+    padding: 20px 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.trip .trip-front .weather-info p {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+}
+
+
+.trip .trip-front .front-side-img {
+    position: relative;
+}
+
+
+.trip .trip-front .front-side-img img {
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+
+.front-side-details {
+    position: relative;
+}
+
+
+.front-side-details h3 {
+    font-size: 20px;
+    position: absolute;
+    top: -15%;
+    left: 20%;
+    transform: translate(-20%,15%);
+    -webkit-transform: translate(-20%,15%);
+    -moz-transform: translate(-20%,15%);
+    -ms-transform: translate(-20%,15%);
+    -o-transform: translate(-20%,15%);
+}
+
+
+.front-side-img {
+    position: relative;
+}
+
+
+.front-side-img h3 {
+    font-size: 20px;
+    position: absolute;
+    top: -17%;
+    left: 100%;
+    transform: translate(-100%,17%);
+    -webkit-transform: translate(-100%,17%);
+    -moz-transform: translate(-100%,17%);
+    -ms-transform: translate(-100%,17%);
+    -o-transform: translate(-100%,17%);
+    white-space: nowrap;
+}
+
+
+.trip .trip-front .weather-info h3 {
+    margin-bottom: 20px;
+}
+
+
+.trip .trip-front, 
+.trip .trip-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    white-space: nowrap;
+}
+
+
+.trip .trip-back {
+    transform: rotateY(180deg);
+}
+
+
+.trip:hover .trip-front {
+    transform: rotateY(180deg);
+}
+
+
+.trip:hover .trip-back {
+    transform: rotateY(360deg);
+}
+
+
+.trip .trip-back .back-side-details,
+.trip .trip-back .back-side-countdown {
+    margin-top: -400px;
+    position: relative;
+}
+
+
+.my-trips .my-trips-content .trip .back-side-details {
+    gap: 30px;
+}
+
+
+.trip .trip-back .back-side-countdown {
+    margin-left: 100px;
+}
+
+
+.trip .trip-back .back-side-countdown h4 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.trip .trip-back .back-side-countdown .countdown {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+
+.trip .trip-back .back-side-countdown .countdown span {
+    display: inline-block;
+    width: fit-content;
+    padding: 40px 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background-color: #f6e6cb;
+    font-size: 40px;
+    font-weight: 600;
+    color: #102c57;
+    position: relative;
+}
+
+
+.trip .trip-back .back-side-countdown .countdown span::after {
+    position: absolute;
+    content: attr(class);
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%,-130%);
+    -webkit-transform: translate(-50%,-130%);
+    -moz-transform: translate(-50%,-130%);
+    -ms-transform: translate(-50%,-130%);
+    -o-transform: translate(-50%,-130%);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #102c57;
+}
+
+
+.trip .trip-back .buttons-container {
+    display: flex;
+    margin-left: -800px;
+    gap: 150px;
+    position: relative;
+}
+
+
+.trip .trip-back .buttons-container button {
+    display: inline;
+    width: fit-content;
+    padding: 15px 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background-color: white;
+    color: #0c1844;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #0c1844;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    outline: none;
+    position: absolute;
+    font-family: "Playfair Display", serif;
+}
+
+
+.print {
+    left: 0;
+    bottom: -150px;
+}
+
+.trip .trip-back .buttons-container .print:hover {
+    background-color: #0c1844;
+    color: white;
+}
+
+
+.add {
+    left: 300px;
+    bottom: -150px;
+}
+
+
+.trip .trip-back .buttons-container .add:hover {
+    background-color: #41b06e;
+    border-color: #41b06e;
+    color: white;
+}
+
+
+.remove {
+    left: 600px;
+    bottom: -150px;
+}
+
+
+.trip .trip-back .buttons-container .remove:hover {
+    background-color: #f44336;
+    border-color: #f44336;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .my-trips {
+        padding: 30px;
+    }
+
+
+    .my-trips-content .trip .trip-front,
+    .my-trips-content .trip .trip-back {
+        flex-direction: column;
+    }
+
+
+    .my-trips .my-trips-content .trip h3 {
+        font-size: 20px;
+    }
+
+
+    .my-trips .my-trips-content .trip .front-side-details,
+    .my-trips .my-trips-content .trip .back-side-details {
+        padding: 0;
+        gap: 10px;
+        text-align: center;
+    }
+
+
+    .my-trips .my-trips-content .trip .front-side-details p,
+    .my-trips .my-trips-content .trip .back-side-details p {
+        font-size: 12px;
+    }
+
+
+    .my-trips .my-trips-content .trip .firstHeading {
+        margin-left: 20px;
+        white-space: nowrap;
+        margin-bottom: 50px;
+    }
+
+
+    .trip .trip-front .weather-info {
+        text-align: center;
+        top: 713px;
+        left: 188px;
+        background-color: #f6e6cb;
+        padding: 10px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+
+
+    .trip .trip-front .weather-info img {
+        max-width: 30%;
+    }
+
+
+    .trip .trip-front .weather-info h3 {
+        margin-bottom: 10px;
+    }
+
+
+    .trip .trip-front .weather-info p {
+        font-family: "Playfair Display", serif;
+        font-size: 15px;
+    }
+    
+    
+    .trip .trip-front .front-side-img img {
+        min-width: 250%;
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+    
+    
+    .front-side-details h3 {
+        font-size: 20px;
+        position: absolute;
+        top: -36px;
+        left: 63px;
+    }
+
+    
+    .front-side-img h3 {
+        left: 164px;
+        top: -7px;
+        white-space: nowrap;
+    }
+
+
+    .my-trips .my-trips-content .trip {
+        padding: 30px 150px 150px 30px;
+        padding-bottom: 150px;
+    }
+
+
+    .trip .trip-back .back-side-countdown {
+        margin-left: -10px;
+        position: relative;
+        top: 400px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown .countdown {
+        display: flex;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown .countdown span {
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown .countdown span::after {
+        font-size: 10px;
+    }
+
+
+    .trip .trip-back .buttons-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        position: relative;
+        top: 350px;
+    }
+    
+    
+    .trip .trip-back .buttons-container button {
+        font-size: 15px;
+    }
+    
+    
+    .print {
+        left: 0;
+        bottom: -150px;
+    }
+
+
+    .add {
+        left: 0;
+        bottom: -200px;
+    }
+
+
+    .remove {
+        left: 0;
+        bottom: -250px;
+    }
+}
+
+
+@media (width: 375px) {
+    .my-trips .my-trips-content .trip .firstHeading {
+        margin-left: 56px;
+    }
+
+
+    .trip .trip-front .weather-info {
+        top: 745px;
+        left: 209px;
+    }
+    
+    
+    .trip .trip-front .front-side-img img {
+        min-width: 183%;
+    }
+    
+    
+    .front-side-details h3 {
+        font-size: 20px;
+        position: absolute;
+        top: -36px;
+        left: 74px;
+    }
+
+
+    .my-trips .my-trips-content .trip .front-side-details {
+        margin-left: 20px;
+    }
+
+    
+    .front-side-img h3 {
+        left: 192px;
+        top: -7px;
+        white-space: nowrap;
+    }
+
+
+    .my-trips .my-trips-content .trip .back-side-details {
+        margin-left: 60px;
+    }
+
+
+    .trip .trip-back .back-side-countdown {
+        margin-left: 20px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown h4 {
+        margin-bottom: 20px;
+        margin-left: 70px;
+        margin-top: 15px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown .countdown span {
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown .countdown span::after {
+        font-size: 10px;
+    }
+
+    
+    .print {
+        left: 80px;
+        bottom: -150px;
+    }
+
+
+    .add {
+        left: 100px;
+        bottom: -200px;
+    }
+
+
+    .remove {
+        left: 120px;
+        bottom: -250px;
+    }
+}
+
+
+@media (width: 425px) {
+    .my-trips .my-trips-content .trip .firstHeading {
+        margin-left: 84px;
+    }
+
+
+    .trip .trip-front .weather-info {
+        top: 776px;
+        left: 231px;
+    }
+    
+    
+    .trip .trip-front .front-side-img img {
+        min-width: 160%;
+    }
+    
+    
+    .front-side-details h3 {
+        font-size: 20px;
+        position: absolute;
+        top: -36px;
+        left: 74px;
+    }
+
+
+    .my-trips .my-trips-content .trip .front-side-details {
+        margin-left: 64px;
+    }
+
+    
+    .front-side-img h3 {
+        left: 224px;
+        top: -7px;
+        white-space: nowrap;
+    }
+
+
+    .my-trips .my-trips-content .trip .back-side-details {
+        margin-left: 80px;
+    }
+
+
+    .trip .trip-back .back-side-countdown {
+        margin-left: 40px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown h4 {
+        margin-left: 50px;
+    }
+
+
+    .print {
+        left: 100px;
+        bottom: -150px;
+    }
+
+
+    .add {
+        left: 120px;
+        bottom: -200px;
+    }
+
+
+    .remove {
+        left: 140px;
+        bottom: -250px;
+    }
+}
+
+
+@media (width: 768px) {
+    .my-trips .my-trips-content .trip .firstHeading {
+        margin-left: 100px;
+        font-size: 35px;
+    }
+
+
+    .trip .trip-front .weather-info {
+        top: 1113px;
+        left: 409px;
+    }
+    
+    
+    .trip .trip-front .front-side-img img {
+        min-width: 121%;
+        margin-top: 55px;
+    }
+    
+    
+    .front-side-details h3 {
+        font-size: 20px;
+        position: absolute;
+        top: -36px;
+        left: 169px;
+    }
+
+
+    .my-trips .my-trips-content .trip .front-side-details {
+        margin-left: 122px;
+    }
+
+    
+    .front-side-img h3 {
+        left: 390px;
+        top: -7px;
+        white-space: nowrap;
+        margin-top: 20px;
+    }
+
+
+    .my-trips .my-trips-content .trip .front-side-details p,
+    .my-trips .my-trips-content .trip .back-side-details p {
+        font-size: 18px;
+    }
+
+
+    .my-trips .my-trips-content .trip .back-side-details {
+        position: relative;
+        top: -300px;
+        left: 70px;
+    }
+
+
+    .trip .trip-back .back-side-countdown {
+        margin-left: 150px;
+        position: relative;
+        top: 200px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown h4 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-left: -70px;
+        margin-top: 10px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown .countdown {
+        display: flex;
+        gap: 15px;
+        padding: 10px 20px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown .countdown span {
+        padding: 30px 20px;
+        font-size: 30px;
+    }
+    
+    
+    .trip .trip-back .back-side-countdown .countdown span::after {
+        font-size: 15px;
+    }
+
+
+    .print {
+        left: 120px;
+        bottom: -150px;
+    }
+
+
+    .add {
+        left: 140px;
+        bottom: -200px;
+    }
+
+
+    .remove {
+        left: 160px;
+        bottom: -250px;
+    }
+
+
+    .trip .trip-back .buttons-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        position: relative;
+        top: 200px;
+    }
+    
+    
+    .trip .trip-back .buttons-container button {
+        font-size: 20px;
+    }
+}

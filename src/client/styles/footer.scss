@@ -1,0 +1,180 @@
+footer {
+    background-color: #ecceae;
+}
+
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 40px;
+    padding: 0 60px;
+    position: relative;
+}
+
+
+footer .container .logo-and-copyRights img {
+    max-width: 70%;
+    max-height: 100%;
+}
+
+
+footer .container .logo-and-copyRights p {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    margin-top: -20px;
+}
+
+
+footer .container .logo-and-copyRights p span {
+    color: #973131;
+}
+
+
+footer .container .contact,
+footer .container .social {
+    padding: 50px;
+}
+
+
+footer .container .contact h3,
+footer .container .social h3 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 25px;
+}
+
+
+footer .container .contact p {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 10px;
+}
+
+
+footer .container .contact p i {
+    margin-right: 10px;
+    color: #973131;
+    font-size: 20px;
+}
+
+
+footer .container .social a i {
+    margin-right: 30px;
+    color: #973131;
+    font-size: 30px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+footer .container .social a .blue:hover {
+    color: rgb(24, 119, 242);
+}
+
+
+footer .container .social a .black:hover {
+    color: #14171a;
+}
+
+
+footer .container .social a .gradient:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+footer .container .social a .blue2:hover {
+    color: rgb(10, 102, 194);
+}
+
+
+footer .container .go-up {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 40px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+
+
+footer .container .go-up i {
+    font-size: 30px;
+    background: linear-gradient(45deg, #f09b33 0%, #e6683c 25%, #a235d6 50%, #2773e6 75%, #7cc243 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+
+@media (max-width: 425px) {
+    footer .container {
+        padding: 0 30px;
+    }
+
+
+    footer .container .logo-and-copyRights img  {
+        margin-left: 30px;
+    }
+
+
+    footer .container .contact,
+    footer .container .social {
+        padding: 30px;
+    }
+
+
+    footer .container .social a i {
+        margin-right: 15px;
+        font-size: 25px;
+    }
+
+
+    footer .container .social h3 {
+        margin-bottom: 5px;
+    }
+}
+
+
+@media (width: 375px) {
+    footer .container .logo-and-copyRights img {
+        margin-left: 40px;
+    }
+}
+
+
+@media (width: 425px) {
+    footer .container .logo-and-copyRights img {
+        margin-left: 50px;
+    }
+}
+
+
+@media (width: 768px) {
+    footer .container .social a i {
+        margin-right: 20px;
+    }
+}

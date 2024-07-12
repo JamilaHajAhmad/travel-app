@@ -31,15 +31,15 @@ npm
 
 1. Clone the repository:
 
-git clone https://github.com/JamilaHajAhmad/travel-app.git
+   git clone https://github.com/JamilaHajAhmad/travel-app.git
 
 2.Navigate to the project directory:
 
-cd travel-app
+   cd travel-app
 
 3. Install dependencies:
 
-npm install
+   npm install
 
 ### Setting Up API Keys
 Create a .env file in the root directory of the project and add your API keys in the following format:
@@ -52,11 +52,11 @@ Create a .env file in the root directory of the project and add your API keys in
 
 1. Start the server:
 
-npm start
+   npm start
 
 2. Open your browser and go to:
 
-http://localhost:5000/
+   http://localhost:5000/
 
 ## API References
 

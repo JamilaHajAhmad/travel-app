@@ -33,7 +33,7 @@ npm
 
    git clone https://github.com/JamilaHajAhmad/travel-app.git
 
-2.Navigate to the project directory:
+2. Navigate to the project directory:
 
    cd travel-app
 
